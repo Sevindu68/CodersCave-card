@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card with Quantity Control</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <img src="./images/burger.jpeg" alt="Card Image" class="card-img">
+        <div class="card-content">
+            <h2 class="card-title">Card Title</h2>
+            <p class="card-description">This is a simple card with quantity control built using HTML, CSS, and JavaScript.</p>
+
+            <div class="bottom-container">
+                <div class="quantity-container">
+                <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                <input type="text" id="quantity" value="1" readonly>
+                <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+            </div>
+
+            <button class="card-btn" onclick="showAlert()">Add to Cart</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
